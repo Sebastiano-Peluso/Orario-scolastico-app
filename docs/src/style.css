@@ -1,0 +1,247 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #caf0f8;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #007ea7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    
+  }
+
+
+
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: grid;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 8vh;
+    margin-top: 10%;
+    width: 75%;
+    align-content: center;
+    margin: auto;
+    line-height: 10vh;
+    contain: content;
+    
+    
+  }
+
+
+
+  .sidebar > .material-icons{
+    float: left;
+    font-size: 25px;
+    pointer-events: none;
+  }
+  
+  .sidebar a:hover {
+    border-radius: 8%;
+    color: white;
+    background-color: #003554;
+    cursor: pointer;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: red;
+  }
+
+
+
+
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #007ea7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: sticky;
+  }
+  
+  .openbtn:hover {
+    background-color: #003554;
+  }
+
+  .change{
+    cursor: pointer;
+    background-color: rgb(6, 187, 6);
+    border: none;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    float: right;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    
+  }
+
+
+  
+  
+
+  @media screen  and (max-width: 912px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 32px;}
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        
+        
+        
+      }
+
+      .table{
+        display: grid;
+        margin: auto;
+        margin-top: 8%;
+        
+        padding: 2px;
+        grid-template-columns: 1.2fr 2fr;
+        grid-template-rows: repeat(8,2.5fr);
+        row-gap: 4px;
+        contain: content;
+        justify-content: center;
+        
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+
+
+
+      .table > .item{
+        display: grid;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        contain: content;
+        text-align: center;
+        border-radius: 8px;
+
+        
+        
+      }
+
+
+    
+    .ora{
+    margin-top: 4%;
+    font-family: 'Vesper Libre', serif;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    
+    }
+
+    .bottom{
+      margin: auto;
+      text-align: center;
+
+    }
+
+    .bottom > p{
+      font-size: 14px;
+    }
+      
+  }
+
+
+
+  
+
+  @media screen and (min-width: 1024px){
+
+    .table{
+      display: grid;
+      margin: auto;
+      margin-top: 2%;
+      
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(8,8%);
+      row-gap: 4px;
+      
+      contain: content;
+      justify-content: center;
+      text-transform: uppercase;
+      font-family: 'Vesper Libre', serif;
+      font-size: 30px;
+    }
+
+    .bottom{
+      
+      text-align: center;
+
+    }
+
+    .bottom > p{
+      font-size: 13px;
+    }
+
+
+
+
+    .table > .item{
+      display: grid;
+      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+      contain: content;
+      align-content: center;
+      border-radius: 8px;
+      
+      
+    }
+
+    time{
+      
+      top: 20%;
+      left: 50%;
+    }
+  
+    .ora{
+    font-family: 'Vesper Libre', serif;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    
+    }
+
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

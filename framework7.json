@@ -1,0 +1,18 @@
+{
+  "cwd": "C:\\Users\\sebas\\OneDrive\\Documenti\\orario scolastico app",
+  "type": [
+    "pwa"
+  ],
+  "name": "Orario scolastico",
+  "framework": "svelte",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": true,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

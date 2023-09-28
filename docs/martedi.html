@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Mooli&family=Vesper+Libre&display=swap" rel="stylesheet">
+    <script src="src/script.js"></script>
+    <script src="src/time.js"></script>
+    <title>Orario Scolastico</title>
+</head>
+<time>
+<body onload="startTime()">
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><br>
+        <br><br><br><br>
+        <a href="index.html">Lunedì</a>
+        <a href="martedi.html">Martedì</a>
+        <a href="mercoledi.html">Mercoledì</a>
+        <a href="giovedi.html">Giovedì</a>
+        <a href="venerdi.html">Venerdì</a>
+
+
+        <!-- <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#" onclick="color()">Link 3</a>
+          </div>
+        </div> -->
+        
+      </div>
+
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Cambia giorno</button>
+        <button class="change" onclick="color()"></button>
+
+
+
+        <div class="table">
+            <div class="item"><p>orario</p></div>
+            <div class="item"><p>materie</p></div>
+            <div class="item"><p>8:15 - 9:10</p></div>
+            <div class="item"><p>animazione</p></div>
+            <div class="item"><p>9:10 - 10:00</p></div>
+            <div class="item"><p>inglese</p></div>
+            <div class="item"><p>10:15 - 11:05</p></div>
+            <div class="item"><p>lettere italiane</p></div>
+            <div class="item"><p>11:05 - 11:55</p></div>
+            <div class="item"><p>lettere italiane</p></div>
+            <div class="item"><p>12:10 - 13:00</p></div>
+            <div class="item"><p>educazione fisica</p></div>
+            <div class="item"><p>13:00 - 13:50</p></div>
+            <div class="item"><p>g. p. o</p></div>
+          </div>
+
+          <div class="ora">
+            <b>
+            <div id="txt"></div>
+            <div id="demo"></div>
+            </b>
+          </div>
+  
+          <div class="ora">
+            <b>
+            <script type="text/JavaScript">
+              var mydate=new Date()
+              var year=mydate.getYear()
+              if (year <1000)
+              year+=1900
+              var day=mydate.getDay()
+              var month=mydate.getMonth()
+              var daym=mydate.getDate()
+              if (daym<10)
+              daym="0"+daym
+              var dayarray=new Array("Domenica ","Lunedì ","Martedì ","Mercoledì ","Giovedì ","Venerdì ","Sabato ")
+              var montharray=new Array("/01/","/02/"," /03/"," /04/","/05/","/06/","/07/","/08/","/09/","/10/","/11/","/12/")
+              document.write(dayarray[day]+" "+daym+" "+montharray[month]+" "+year)
+  
+              </script>
+              </b>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2023-2024 Sebastiano Peluso. All rights reserved</p>
+          </div>
+
+      </div>
+
+      
+
+    
+
+</body>
+
+
+
+</time>
+
+</html>
