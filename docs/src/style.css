@@ -30,7 +30,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #333;
     transition: opacity 0.75s, visibility 1s;
   }
 
@@ -38,8 +37,9 @@ body {
     content: "";
     width: 100px;
     height: 100px;
-    border: 15px solid #dddddd;
-    border-top-color: #2a9134;
+    border: 15px solid white;
+    border-top-color: #76c893;
+    border-bottom-color: #76c893;
     border-radius: 50%;
 
     animation: loading 1s ease infinite;
